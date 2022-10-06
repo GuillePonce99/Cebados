@@ -713,7 +713,7 @@ h2 {
   .tiposdemate .card p {
     padding: 0;
   }
-  .tiposdemate .card :hover {
+  .card:hover {
     -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
             animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
@@ -759,7 +759,7 @@ h2 {
     transition-property: all;
     transition-duration: 0.8s;
   }
-  .pareja img :hover {
+  .pareja img:hover {
     transform: translateY(-5%);
   }
   .quienesSomos p {

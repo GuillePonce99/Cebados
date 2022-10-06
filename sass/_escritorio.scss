@@ -102,9 +102,10 @@
         p {
             padding: 0;
         }
-        :hover {
-            animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        }
+    }
+    
+    .card:hover {
+        animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     
     @keyframes slide-fwd-center {
@@ -148,11 +149,11 @@
         border-radius: 30px;
         transition-property: all;
         transition-duration: 0.8s;
-        :hover{
-            transform: translateY(-5%);
-        }
     }
     
+    .pareja img:hover{
+        transform: translateY(-5%);
+    }
     .quienesSomos p {
         width: 410px;
         font-size: 20px;
