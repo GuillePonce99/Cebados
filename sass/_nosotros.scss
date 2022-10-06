@@ -5,17 +5,16 @@
     padding: 30px 15px;
 }
 
-.pareja img {
-    box-shadow: grey 0px 5px 15px;
-    border-radius: 30px; 
-    width: 60%;
-    margin: 15px;
-}
-
 .pareja {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    img {
+        box-shadow: grey 0px 5px 15px;
+        border-radius: 30px; 
+        width: 60%;
+        margin: 15px;
+    }
 }
 
 .container-fluid {

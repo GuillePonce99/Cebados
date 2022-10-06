@@ -32,13 +32,11 @@ body {
   box-shadow: grey 0px 5px 15px;
   flex-wrap: wrap;
 }
-
 .marca .logo {
   display: none;
   align-items: center;
   padding: 0 15px;
 }
-
 .marca .logo img {
   width: 50px;
 }
@@ -53,7 +51,6 @@ body {
   padding: 0 10px;
   margin: 10px;
 }
-
 .titulo p {
   color: bisque;
   margin: 0;
@@ -79,12 +76,10 @@ nav ul {
   list-style-type: none;
   justify-content: center;
 }
-
 nav ul li {
   text-align: center;
   margin: 5px 30px;
 }
-
 nav ul li a {
   text-decoration: none;
   color: black;
@@ -112,6 +107,12 @@ footer {
   align-items: center;
   margin: 25px 0;
 }
+.contenedor-footer .logo img {
+  width: 130px;
+}
+.contenedor-footer .redes img {
+  width: 40px;
+}
 
 .contenedor-ubicacion {
   display: flex;
@@ -131,14 +132,6 @@ footer {
   width: 250px;
   font-weight: bold;
   margin: 25px 0;
-}
-
-.contenedor-footer .logo img {
-  width: 130px;
-}
-
-.contenedor-footer .redes img {
-  width: 40px;
 }
 
 /* INICIO */
@@ -169,7 +162,6 @@ footer {
   width: 80%;
   text-align: center;
 }
-
 .esloganFlex p {
   font-size: 15px;
   font-style: italic;
@@ -183,7 +175,6 @@ footer {
   padding: 10px 35px;
   font-size: 20px;
 }
-
 .boton a {
   text-decoration: none;
   color: black;
@@ -203,25 +194,20 @@ footer {
 .tiposdemate {
   padding: 20px 15px;
 }
-
 .tiposdemate p {
   padding: 15px 0;
 }
-
 .tiposdemate img {
   box-shadow: grey 0px 5px 15px;
 }
-
 .tiposdemate div {
   text-align: center;
 }
-
 .tiposdemate .card {
   border-radius: 10px;
   max-width: 450px;
   margin: 0 auto;
 }
-
 .tiposdemate .card img {
   border-radius: 10px;
 }
@@ -271,7 +257,6 @@ h2 {
   margin: 15px;
   border-radius: 0.25rem;
 }
-
 .caja img {
   max-height: 234px;
   width: 100%;
@@ -319,7 +304,6 @@ h2 {
 .caja10 {
   grid-area: termos1;
 }
-
 .caja10 img {
   max-height: 500px;
   height: 100%;
@@ -380,7 +364,6 @@ h2 {
 .tituloContacto {
   height: 500px;
 }
-
 .tituloContacto div {
   display: flex;
   flex-direction: column;
@@ -389,12 +372,10 @@ h2 {
   text-align: center;
   margin: 0 20px;
 }
-
 .tituloContacto div p {
   color: beige;
   font-size: 15px;
 }
-
 .tituloContacto div p:first-of-type {
   font-size: 30px;
   padding-bottom: 25px;
@@ -429,17 +410,14 @@ h2 {
   text-align: center;
   padding: 20px;
 }
-
 .redesContacto img {
   height: 60px;
   width: 60px;
 }
-
 .redesContacto div img {
   height: 40px;
   width: 40px;
 }
-
 .redesContacto p:first-of-type {
   font-size: 30px;
 }
@@ -450,14 +428,12 @@ h2 {
   border: grey 1px solid;
   max-width: 70%;
 }
-
 .botonContacto a {
   text-decoration: none;
   color: black;
   letter-spacing: 5px;
   font-weight: bold;
 }
-
 .botonContacto a:hover {
   color: darksalmon;
 }
@@ -470,17 +446,16 @@ h2 {
   padding: 30px 15px;
 }
 
+.pareja {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 .pareja img {
   box-shadow: grey 0px 5px 15px;
   border-radius: 30px;
   width: 60%;
   margin: 15px;
-}
-
-.pareja {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 .container-fluid {
@@ -499,7 +474,6 @@ h2 {
 .contenedorCuidados {
   margin: 15px;
 }
-
 .contenedorCuidados h1 {
   text-align: center;
   font-weight: bold;
@@ -531,11 +505,9 @@ h2 {
   display: flex;
   flex-direction: column;
 }
-
 .cuidados__grid p {
   margin: 5px;
 }
-
 .cuidados__grid img {
   margin: auto 15px;
 }
@@ -630,13 +602,13 @@ h2 {
 /* ESCRITORIO */
 @media (min-width: 992px) {
   /* HEADER/FOOTER */
-  .marca .logo {
-    display: flex;
-  }
   .marca {
     padding: 30px 0;
     height: 150px;
     text-align: center;
+  }
+  .marca .logo {
+    display: flex;
   }
   nav ul li {
     text-align: center;
@@ -657,6 +629,11 @@ h2 {
   .esloganFlex {
     height: 500px;
     width: 100%;
+  }
+  .boton {
+    width: 80%;
+    height: 70px;
+    font-size: 25px;
   }
   .boton a:hover {
     color: darksalmon;
@@ -711,11 +688,6 @@ h2 {
       transform: scale3d(1, 1, 1);
     }
   }
-  .boton {
-    width: 80%;
-    height: 70px;
-    font-size: 25px;
-  }
   .contenedor {
     max-width: 1000px;
     margin: 0 auto;
@@ -741,7 +713,7 @@ h2 {
   .tiposdemate .card p {
     padding: 0;
   }
-  .tiposdemate .card:hover {
+  .tiposdemate .card :hover {
     -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
             animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
@@ -787,7 +759,7 @@ h2 {
     transition-property: all;
     transition-duration: 0.8s;
   }
-  .pareja img:hover {
+  .pareja img :hover {
     transform: translateY(-5%);
   }
   .quienesSomos p {
@@ -839,20 +811,20 @@ h2 {
     transition-property: all;
     transition-duration: 0.5s;
   }
-  .cuidados__texto {
-    font-size: 25px;
-  }
   .cuidados__grid p {
     font-size: 20px;
+  }
+  .cuidados__texto {
+    font-size: 25px;
   }
   .cuidados__titulo p {
     font-size: 28px;
   }
-  .text-transition:hover {
-    transform: translateX(4%);
-  }
   .text-transition {
     transition-property: all;
     transition-duration: 0.5s;
+  }
+  .text-transition:hover {
+    transform: translateX(4%);
   }
 }/*# sourceMappingURL=estilos.css.map */

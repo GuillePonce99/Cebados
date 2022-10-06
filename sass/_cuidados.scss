@@ -1,11 +1,10 @@
 .contenedorCuidados {
     margin: 15px;
-}
-
-.contenedorCuidados h1 {
-    text-align: center;
-    font-weight: bold;
-    border: 1px solid gray;
+    h1 {
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid gray;
+    }
 }
 
 .cuidados {
@@ -32,12 +31,10 @@
 .cuidados__grid {
     display: flex;
     flex-direction: column;
-}
-
-.cuidados__grid p {
-    margin: 5px;
-}
-
-.cuidados__grid img {
-    margin: auto 15px;
+    p {
+        margin: 5px;
+    }
+    img {
+        margin: auto 15px;
+    }
 }

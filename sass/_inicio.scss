@@ -6,7 +6,6 @@
     box-shadow: grey 0px 5px 15px;
     background-position: right;
 }
-
 .eslogan {
     display: flex;
     flex-direction: column;
@@ -14,7 +13,6 @@
     align-items: center;
     height: 400px;
 }
-
 .esloganFlex {
     display: flex;
     flex-direction: column;
@@ -24,29 +22,25 @@
     color: bisque;
     width: 80%;
     text-align: center;
+    p {
+        font-size: 15px;
+        font-style: italic;
+        color: beige;
+        margin: 0;
+    }
 }
-
-.esloganFlex p {
-    font-size: 15px;
-    font-style: italic;
-    color: beige;
-    margin: 0;
-}
-
 .boton {
     background-color: bisque;
     border: none;
     padding: 10px 35px;
     font-size: 20px;
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: 'Barlow', sans-serif;
+        letter-spacing: 5px;
+    }
 }
-
-.boton a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Barlow', sans-serif;
-    letter-spacing: 5px;
-}
-
 .contenedor{
     margin: 10px;
 }
@@ -58,28 +52,23 @@
 
 .tiposdemate{
     padding: 20px 15px;
-}
-
-.tiposdemate p {
-    padding: 15px 0;
-}
-
-.tiposdemate img {
-    box-shadow: grey 0px 5px 15px;
-}
-
-.tiposdemate div {
-    text-align: center;
-}
-
-.tiposdemate .card {
-    border-radius: 10px;
-    max-width: 450px;
-    margin: 0 auto;
-}
-
-.tiposdemate .card img {
-    border-radius: 10px;
+    p {
+        padding: 15px 0;
+    }
+    img {
+        box-shadow: grey 0px 5px 15px;
+    }
+    div {
+        text-align: center;
+    }
+    .card {
+        border-radius: 10px;
+        max-width: 450px;
+        margin: 0 auto;
+        img {
+            border-radius: 10px;
+        }
+    }
 }
 
 .border-img {

@@ -2,7 +2,6 @@
     font-family: 'Barlow', sans-serif;
     background-color: rgb( 244, 244, 244);
     font-weight: bold;
-
 }
 
 .fondoContacto {
@@ -15,25 +14,22 @@
 
 .tituloContacto {
     height: 500px;
-}
-
-.tituloContacto div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 500px;
-    text-align: center;
-    margin: 0 20px;
-}
- 
-.tituloContacto div p {
-    color: beige;
-    font-size: 15px;
-}
-
-.tituloContacto div p:first-of-type {
-    font-size: 30px;
-    padding-bottom: 25px;
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 500px;
+        text-align: center;
+        margin: 0 20px;
+        p {
+            color: beige;
+            font-size: 15px;
+        }
+        p:first-of-type {
+            font-size: 30px;
+            padding-bottom: 25px;
+        }
+    }
 }
 
 .contenedorContacto {
@@ -64,36 +60,31 @@
     justify-content: space-evenly;
     text-align: center;
     padding: 20px;
+    img {
+        height: 60px;
+        width: 60px;
+    }
+    div img {
+        height: 40px;
+        width: 40px;
+    }
+    p:first-of-type {
+        font-size: 30px;
+    }
 }
 
-.redesContacto img {
-    height: 60px;
-    width: 60px;
-}
-
-.redesContacto div img {
-    height: 40px;
-    width: 40px;
-}
-
-.redesContacto p:first-of-type {
-    font-size: 30px;
-}
-
- .botonContacto {
+.botonContacto {
     background-color: bisque;
     font-size: 20px;
     border: grey 1px solid;
     max-width: 70%;
-}
-
-.botonContacto a {
-    text-decoration: none;
-    color: black;
-    letter-spacing: 5px;
-    font-weight: bold;
-}
-
-.botonContacto a:hover{
-    color: darksalmon;
+    a {
+        text-decoration: none;
+        color: black;
+        letter-spacing: 5px;
+        font-weight: bold;
+    }
+    a:hover{
+        color: darksalmon;
+    }
 }

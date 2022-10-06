@@ -31,14 +31,13 @@
     border: grey solid 1px;
     margin: 15px;
     border-radius: 0.25rem;
-}
-
-.caja img {
-    max-height: 234px;
-    width: 100%;
-    height: 55vw;
-    box-shadow : grey 0px 8px 25px ;
-    border-radius: 0;
+    img {
+        max-height: 234px;
+        width: 100%;
+        height: 55vw;
+        box-shadow : grey 0px 8px 25px ;
+        border-radius: 0;
+    }
 }
 
 .caja1 {
@@ -79,11 +78,10 @@
 
 .caja10 {
     grid-area: termos1;
-}
-
-.caja10 img{
-    max-height: 500px;
-    height: 100%;
+    img{
+        max-height: 500px;
+        height: 100%;
+    }
 }
 
 .caja11 {
