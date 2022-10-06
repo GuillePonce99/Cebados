@@ -1,0 +1,124 @@
+.container {
+    width: auto;
+}
+
+.productos {
+    margin: 0 auto 30px;
+    max-width: 410px;
+    display: grid;
+    justify-content: center;
+    align-items: stretch;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "caja1 caja2"
+    "caja3 caja4"
+    "caja5 caja6"
+    "caja7 caja8"
+    "caja9 caja9";
+}
+
+.productos-style-1 {
+    grid-template-areas: 
+    "termos1 termos1"
+    "termos1 termos1"
+    "termos3 termos4"
+    "termos2 termos5"
+    "termos6 termos7";
+}
+
+.caja {
+    text-align: center;
+    border: grey solid 1px;
+    margin: 15px;
+    border-radius: 0.25rem;
+}
+
+.caja img {
+    max-height: 234px;
+    width: 100%;
+    height: 55vw;
+    box-shadow : grey 0px 8px 25px ;
+    border-radius: 0;
+}
+
+.caja1 {
+    grid-area: caja1;
+}
+
+.caja2 {
+    grid-area: caja2;
+}
+
+.caja3 {
+    grid-area: caja3    
+}
+
+.caja4 {
+    grid-area: caja4
+}
+
+.caja5 {
+    grid-area: caja5
+}
+
+.caja6 {
+    grid-area: caja6;
+}
+
+.caja7 {
+    grid-area: caja7 
+}
+
+.caja8 {
+    grid-area: caja8;
+}
+
+.caja9 {
+    grid-area: caja9;
+}
+
+.caja10 {
+    grid-area: termos1;
+}
+
+.caja10 img{
+    max-height: 500px;
+    height: 100%;
+}
+
+.caja11 {
+    grid-area: termos2;
+}
+
+.caja12 {
+    grid-area: termos3;
+}
+
+.caja13 {
+    grid-area: termos4;
+}
+
+.caja14 {
+    grid-area: termos5;
+}
+
+.caja15 {
+    grid-area: termos6;
+}
+
+.caja16 {
+    grid-area: termos7;
+}
+
+.titulos {
+    text-align: center;
+    font-size: 25px;
+    margin: 45px auto;
+    border: 1px solid grey;
+    width: 110px;
+    height: 40px;
+ }
+
+.caja:hover {
+    border: bisque solid 1px;
+}

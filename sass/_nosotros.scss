@@ -1,0 +1,31 @@
+.quienesSomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.pareja img {
+    box-shadow: grey 0px 5px 15px;
+    border-radius: 30px; 
+    width: 60%;
+    margin: 15px;
+}
+
+.pareja {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container-fluid {
+    background-color: bisque;
+}
+
+.navbar-dark .navbar-toggler {
+    border: 1px solid grey;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.15rem;
+}

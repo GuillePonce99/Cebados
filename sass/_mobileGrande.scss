@@ -1,0 +1,76 @@
+@media(min-width:500px){
+
+    /* HEADER/FOOTER */
+
+    nav ul li {
+        margin: 5px 14px;
+    }
+
+    /* INICIO */
+    
+    .fondo {
+        height: 500px;
+    }
+
+    .eslogan {
+        height: 500px;
+    }
+
+    #carouselExampleFade {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /* CONTACTO */
+
+    .contenedorContacto {
+        flex-wrap: nowrap;
+    }
+
+    .redesContacto {
+        min-height: 80%;
+    }
+
+
+
+    /* NOSOTROS */
+
+    .pareja img {
+        width: 40%;
+        margin: 10px 15px;
+    }
+
+    /* CUIDADOS */
+
+    .contenedorCuidados {
+        max-width: 500px;
+        margin: 15px auto;
+    }
+
+    /* PRODUCTOS */
+
+    .productos {
+        max-width: 700px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "caja1 caja2 caja3"
+        "caja4 caja5 caja6"
+        "caja7 caja8 caja9";
+    }
+
+    .productos-style-1 {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "termos1 termos2 termos3"
+        "termos1 termos4 termos5"
+        "termos6 termos7 termos7";
+    }
+
+    .caja img {
+        max-height: 265px;
+    }
+
+    .caja10 img {
+        max-height: 365px;
+    }
+}

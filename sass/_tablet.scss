@@ -1,0 +1,47 @@
+@media(min-width:800px){
+
+    /* HEADER/FOOTER */
+     footer{
+         flex-direction: row;
+         justify-content: space-around;
+     }
+ 
+     .contenedor-ubicacion{
+         order: 1;
+     }
+ 
+     .contenedor-footer {
+         order: 2;
+     }
+ 
+     .contenedor-contacto{
+         order: 3;
+     }
+ 
+     /* INICIO */
+ 
+     .esloganFlex p {
+         margin-top: 60px;
+     }
+ 
+     #carouselExampleFade {
+         width: 60%;
+         margin: 0 auto;
+     }
+ 
+     h2 {
+         width: 50%;
+         margin: 70px auto;
+     }
+ 
+     .border-img{
+         width: 40%;
+     }
+ 
+     /* CUIDADOS */
+ 
+     .contenedorCuidados {
+         max-width: 800px;
+     }
+ 
+ }

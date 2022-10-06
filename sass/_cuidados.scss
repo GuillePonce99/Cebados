@@ -1,0 +1,43 @@
+.contenedorCuidados {
+    margin: 15px;
+}
+
+.contenedorCuidados h1 {
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid gray;
+}
+
+.cuidados {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.cuidados__titulo p {
+    padding: 10px;
+    font-weight: bold;
+    border: 2px solid bisque;
+    margin: 10px 0;
+}
+
+.text-transition {
+    display: flex;
+    margin: 15px auto;
+    width: 100%;
+}
+
+.cuidados__grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.cuidados__grid p {
+    margin: 5px;
+}
+
+.cuidados__grid img {
+    margin: auto 15px;
+}
