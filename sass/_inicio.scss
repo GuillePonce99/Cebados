@@ -58,8 +58,6 @@
     }
     @media(min-width:992px){
         @include size (80%, 70px);
-        width: 80%;
-        height: 70px;
         font-size: 25px;
     }
     &:hover {

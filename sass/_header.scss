@@ -59,7 +59,6 @@
 }
 
 .navbar-dark {
-    border: 1px solid grey;
     @media(min-width:992px){
         visibility: hidden;
     }
@@ -96,7 +95,7 @@ nav{
     background-color: $color-general;
 }
 
-.navbar-toggler{
+.navbar-dark .navbar-toggler{
     border: 1px solid grey;
     &:focus {
         box-shadow: 0 0 0 0.15rem;
