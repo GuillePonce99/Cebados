@@ -30,7 +30,6 @@
         text-align: center;
     }
 }
-
 .titulo {
     padding: 0 10px;
     margin: 10px;
@@ -57,13 +56,11 @@
     padding-bottom: 0;
     box-shadow: $box-shadow;
 }
-
 .navbar-dark {
     @media(min-width:992px){
         visibility: hidden;
     }
 }
-
 nav{
     ul {
         @include display-direction-justify (flex, row, center);
@@ -90,11 +87,9 @@ nav{
         }
     }
 }
-
 .container-fluid {
     background-color: $color-general;
 }
-
 .navbar-dark .navbar-toggler{
     border: 1px solid grey;
     &:focus {

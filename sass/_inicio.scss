@@ -66,10 +66,7 @@
         }
     }
 }
-
-
 @media(min-width:992px){
-
     @keyframes jello-horizontal {
         0% {
             transform: scale3d(1, 1, 1);
@@ -94,8 +91,6 @@
         }
     }
 }
-
-
 #carouselExampleFade {
     width: 90%;
     margin: 0 auto;
@@ -112,7 +107,6 @@
         margin: 0 auto;
     }
 }
-
 .tiposdemate{
     padding: 20px 15px;
     p {
@@ -153,7 +147,6 @@
         }
     }
 }
-
 @media(min-width:992px){
     @keyframes slide-fwd-center {
         0% {
@@ -164,7 +157,6 @@
         }
     }
 }
-
 .border-img {
     width: 70%;
     border: 1px solid gray;
@@ -177,11 +169,9 @@
         margin: 30px auto;
     }
 }
-
 .carousel-item{
     img {
         border-radius: 5px;
         box-shadow: grey 0px 5px 0px;
     }
 } 
-

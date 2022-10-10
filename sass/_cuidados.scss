@@ -11,14 +11,12 @@
         max-width: 992px;
     }
 }
-
 .cuidados {
     @include display-direction-justify (flex, column, none);
     justify-items: center;
     align-items: center;
     margin-bottom: 25px;
 }
-
 .cuidados__titulo {
     h2 {
         padding: 10px;
@@ -30,7 +28,6 @@
         }
     }
 }
-
 .text-transition {
     display: flex;
     margin: 15px auto;
@@ -45,8 +42,6 @@
         }
     }
 }
-
-
 .cuidados__grid {
     @include display-direction-justify (flex, column, none);
     p {
@@ -64,7 +59,6 @@
         transition-duration: 0.5s;
     }
 }
-
 .cuidados__texto {
     @media(min-width:992px){
         font-size: 25px;

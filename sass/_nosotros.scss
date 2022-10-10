@@ -9,7 +9,6 @@
         }
     }
 }
-
 .quienesSomos__segundo {
     @media(min-width:992px){
         @include display-direction-justify (flex, row, space-between);
@@ -17,7 +16,6 @@
         padding: 20px 0;
     }
 }
-
 .pareja {
     @include display-direction-justify (flex, row, space-around);
     flex-wrap: wrap;

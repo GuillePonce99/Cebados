@@ -1,7 +1,6 @@
 .container {
     width: auto;
 }
-
 .productos {
     margin: 0 auto 30px;
     max-width: 410px;
@@ -36,7 +35,6 @@
         
     }
 }
-
 .productos-style-1 {
     grid-template-areas: 
     "termos1 termos1"
@@ -59,7 +57,6 @@
         "termos1 termos5 termos6 termos7";
     }
 }
-
 .caja {
     text-align: center;
     border: grey solid 1px;
@@ -84,7 +81,6 @@
         }
     }
 }
-
 @media(min-width:992px){
     @keyframes slide-fwd-center {
         0% {
@@ -95,43 +91,33 @@
         }
      }
 }
-
 .caja1 {
     grid-area: caja1;
 }
-
 .caja2 {
     grid-area: caja2;
 }
-
 .caja3 {
     grid-area: caja3    
 }
-
 .caja4 {
     grid-area: caja4
 }
-
 .caja5 {
     grid-area: caja5
 }
-
 .caja6 {
     grid-area: caja6;
 }
-
 .caja7 {
     grid-area: caja7 
 }
-
 .caja8 {
     grid-area: caja8;
 }
-
 .caja9 {
     grid-area: caja9;
 }
-
 .caja10 {
     grid-area: termos1;
     img{
@@ -145,31 +131,24 @@
         }
     }
 }
-
 .caja11 {
     grid-area: termos2;
 }
-
 .caja12 {
     grid-area: termos3;
 }
-
 .caja13 {
     grid-area: termos4;
 }
-
 .caja14 {
     grid-area: termos5;
 }
-
 .caja15 {
     grid-area: termos6;
 }
-
 .caja16 {
     grid-area: termos7;
 }
-
 .titulos {
     text-align: center;
     font-size: 25px;
@@ -177,4 +156,3 @@
     border: 1px solid grey;
     width: 110px;
 }
-

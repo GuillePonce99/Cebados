@@ -1,13 +1,14 @@
+/* VARIABLES */
 $h1-shadow: black -3px 0px 5px;
 $h1-fontsize: 45px; 
 $color-general: bisque;
 $color-hover: darksalmon;
 $box-shadow: grey 0px 5px 15px;
+/* MIXIN */
 @mixin size ($width, $height){
     height: $height;
     width: $width;
 }
-
 @mixin display-direction-justify ($display, $direction, $justify) {
     display: $display;
     flex-direction: $direction;

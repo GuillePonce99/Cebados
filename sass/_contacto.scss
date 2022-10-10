@@ -3,7 +3,6 @@
     background-color: rgb( 244, 244, 244);
     font-weight: bold;
 }
-
 .fondoContacto {
     height: 500px;
     background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("../img/fondo.jpg");
@@ -14,7 +13,6 @@
         background-position: right center;
     }
 }
-
 .tituloContacto {
     height: 500px;
     div {
@@ -39,7 +37,6 @@
         margin: 0 auto;
     }
 }
-
 .contenedorContacto {
     @include display-direction-justify (flex, row, center);
     flex-wrap: wrap;
@@ -49,19 +46,16 @@
         flex-wrap: nowrap;
     }
 }
-
 .consulta {
     background-color: white;
     max-width: 85%;
     margin: 15px;
 }
-
 .contacto {
     background-color: white;
     margin: 15px;
     max-width: 85%;
 }
-
 .redesContacto {
     @include display-direction-justify (flex, column, space-evenly);
     margin: 10px;
@@ -86,7 +80,6 @@
         margin: 0 60px;
     }
 }
-
 .botonContacto {
     background-color: $color-general;
     font-size: 20px;
