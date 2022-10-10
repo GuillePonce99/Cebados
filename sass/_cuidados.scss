@@ -1,40 +1,72 @@
 .contenedorCuidados {
     margin: 15px;
-    h1 {
-        text-align: center;
-        font-weight: bold;
-        border: 1px solid gray;
+    @media(min-width:500px){
+        max-width: 500px;
+        margin: 40px auto;
+    }
+    @media(min-width:800px){
+        max-width: 800px;
+    }
+    @media(min-width:992px){
+        max-width: 992px;
     }
 }
 
 .cuidados {
-    display: flex;
-    flex-direction: column;
+    @include display-direction-justify (flex, column, none);
     justify-items: center;
     align-items: center;
     margin-bottom: 25px;
 }
 
-.cuidados__titulo p {
-    padding: 10px;
-    font-weight: bold;
-    border: 2px solid bisque;
-    margin: 10px 0;
+.cuidados__titulo {
+    p {
+        padding: 10px;
+        font-weight: bold;
+        border: 2px solid $color-general;
+        margin: 10px 0;
+        @media(min-width:992px){
+            font-size: 28px;
+        }
+    }
 }
 
 .text-transition {
     display: flex;
     margin: 15px auto;
     width: 100%;
+    @media(min-width:992px){
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+    &:hover {
+        @media(min-width:992px){
+            transform: translateX(4%);
+        }
+    }
 }
 
+
 .cuidados__grid {
-    display: flex;
-    flex-direction: column;
+    @include display-direction-justify (flex, column, none);
     p {
         margin: 5px;
+        @media(min-width:992px){
+            font-size: 20px;
+        }
     }
     img {
         margin: auto 15px;
+    }
+    @media(min-width:992px){
+        width: 100%;
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+}
+
+.cuidados__texto {
+    @media(min-width:992px){
+        font-size: 25px;
     }
 }

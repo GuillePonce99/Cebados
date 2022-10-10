@@ -3,34 +3,45 @@
     background-repeat: no-repeat; 
     background-size: cover;
     height: 400px;
-    box-shadow: grey 0px 5px 15px;
+    box-shadow: $box-shadow;
     background-position: right;
+    @media(min-width:500px){
+        height: 500px;
+    }
 }
 .eslogan {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include display-direction-justify (flex, column, center);
     align-items: center;
     height: 400px;
+    @media(min-width:500px){
+        height: 500px;
+    }
+    @media(min-width:992px){
+        @include size (450px, 500px);
+        margin: 0 auto;
+    }
 }
 .esloganFlex {
-    display: flex;
-    flex-direction: column;
+    @include display-direction-justify (flex, column, space-around);
+    @include size (80%, 100%);
     align-items: center;
-    justify-content: space-around;
-    height: 100%;
-    color: bisque;
-    width: 80%;
+    color: $color-general;
     text-align: center;
     p {
         font-size: 15px;
         font-style: italic;
         color: beige;
         margin: 0;
+        @media(min-width:800px){
+            margin-top: 60px;
+        }
+    }
+    @media(min-width:992px){
+        @include size (100%, 500px);
     }
 }
 .boton {
-    background-color: bisque;
+    background-color: $color-general;
     border: none;
     padding: 10px 35px;
     font-size: 20px;
@@ -39,15 +50,69 @@
         color: black;
         font-family: 'Barlow', sans-serif;
         letter-spacing: 5px;
+        &:hover {
+            @media(min-width:992px){
+                color: $color-hover;
+            }
+        }
+    }
+    @media(min-width:992px){
+        @include size (80%, 70px);
+        width: 80%;
+        height: 70px;
+        font-size: 25px;
+    }
+    &:hover {
+        @media(min-width:992px){
+            animation: jello-horizontal 0.9s both;
+        }
     }
 }
-.contenedor{
-    margin: 10px;
+
+
+@media(min-width:992px){
+
+    @keyframes jello-horizontal {
+        0% {
+            transform: scale3d(1, 1, 1);
+        }
+        30% {
+            transform: scale3d(1.25, 0.75, 1);
+        }
+        40% {
+            transform: scale3d(0.75, 1.25, 1);
+        }
+        50% {
+            transform: scale3d(1.15, 0.85, 1);
+        }
+        65% {
+            transform: scale3d(0.95, 1.05, 1);
+        }
+        75% {
+            transform: scale3d(1.05, 0.95, 1);
+        }
+        100% {
+            transform: scale3d(1, 1, 1);
+        }
+    }
 }
+
 
 #carouselExampleFade {
     width: 90%;
     margin: 0 auto;
+    @media(min-width:500px){
+        width: 70%;
+        margin: 0 auto;
+    }
+    @media(min-width:800px){
+        width: 60%;
+        margin: 0 auto;
+    }
+    @media(min-width:992px){
+        width: 50%;
+        margin: 0 auto;
+    }
 }
 
 .tiposdemate{
@@ -56,7 +121,7 @@
         padding: 15px 0;
     }
     img {
-        box-shadow: grey 0px 5px 15px;
+        box-shadow: $box-shadow;
     }
     div {
         text-align: center;
@@ -67,6 +132,37 @@
         margin: 0 auto;
         img {
             border-radius: 10px;
+            @media(min-width:992px){
+                width: 100%;
+                margin: 0;
+                border-radius: 10px;
+            }
+        }
+        p{
+            @media(min-width:992px){
+                padding: 0;
+            }
+        }
+        @media(min-width:992px){
+            max-width: none;
+            width: 75%;
+            margin: 0 auto;
+        }
+        &:hover {
+            @media(min-width:992px){
+                animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
+        }
+    }
+}
+
+@media(min-width:992px){
+    @keyframes slide-fwd-center {
+        0% {
+        transform: translateZ(0);
+        }
+        100% {
+        transform: perspective(180px) translateZ(10px);
         }
     }
 }
@@ -76,17 +172,18 @@
     border: 1px solid gray;
     margin: 0px auto 30px;
     text-align: center;
+    @media(min-width:800px){
+        width: 40%;
+    }
+    @media(min-width:992px){
+        margin: 30px auto;
+    }
 }
 
-.carousel-item img {
-    border-radius: 5px;
-    box-shadow: grey 0px 5px 0px;
-}
+.carousel-item{
+    img {
+        border-radius: 5px;
+        box-shadow: grey 0px 5px 0px;
+    }
+} 
 
-h2 {
-    text-align: center;
-    margin: 20px auto;
-    border: 1px solid gray;
-    width: 70%;
-    text-shadow: black -3px 0px 5px;
-}

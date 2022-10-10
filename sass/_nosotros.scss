@@ -1,30 +1,45 @@
 .quienesSomos {
-    display: flex;
-    flex-direction: column;
+    @include display-direction-justify (flex, column, none);
     align-items: center;
-    padding: 30px 15px;
-}
-
-.pareja {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    img {
-        box-shadow: grey 0px 5px 15px;
-        border-radius: 30px; 
-        width: 60%;
-        margin: 15px;
+    p{
+        @media(min-width:992px){
+            width: 410px;
+            font-size: 20px;
+            margin: 10px 15px;
+        }
     }
 }
 
-.container-fluid {
-    background-color: bisque;
+.quienesSomos__segundo {
+    @media(min-width:992px){
+        @include display-direction-justify (flex, row, space-between);
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
 }
 
-.navbar-dark .navbar-toggler {
-    border: 1px solid grey;
-}
-
-.navbar-toggler:focus {
-    box-shadow: 0 0 0 0.15rem;
+.pareja {
+    @include display-direction-justify (flex, row, space-around);
+    flex-wrap: wrap;
+    img {
+        box-shadow: $box-shadow;
+        border-radius: 30px; 
+        width: 60%;
+        margin: 15px;
+        @media(min-width:500px){
+            width: 40%;
+            margin: 10px 15px;
+        }
+        @media(min-width:992px){
+            margin: 50px 20px;
+            border-radius: 30px;
+            transition-property: all;
+            transition-duration: 0.8s;
+        }
+        &:hover {
+            @media(min-width:992px){
+                transform: translateY(-5%);
+            }
+        }
+    }
 }

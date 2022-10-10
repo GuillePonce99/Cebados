@@ -8,3 +8,25 @@ body {
     background-color: #fff;
     font-family: 'Poppins', sans-serif;
 }
+
+h1 {
+    text-align: center;
+    margin: 20px auto;
+    text-shadow: $h1-shadow;
+    @media(min-width:800px){
+        margin: 40px auto;
+        font-size: $h1-fontsize;
+    }
+}
+
+.contenedor{
+    margin: 40px 10px;
+    @media(min-width:800px) {
+        margin: 40px 30px;
+    }
+    @media(min-width:992px){
+        max-width: 1000px;
+        margin: 40px auto;
+        font-size: 25px; 
+    }
+}
