@@ -121,7 +121,7 @@
     .card {
         border-radius: 10px;
         max-width: 450px;
-        margin: 0 auto;
+        margin: 30px auto;
         img {
             border-radius: 10px;
             @media(min-width:992px){
@@ -138,7 +138,7 @@
         @media(min-width:992px){
             max-width: none;
             width: 75%;
-            margin: 0 auto;
+            margin: 50px auto;
         }
         &:hover {
             @media(min-width:992px){
@@ -175,3 +175,6 @@
         box-shadow: grey 0px 5px 0px;
     }
 } 
+.card-text {
+    font-style: italic;
+}

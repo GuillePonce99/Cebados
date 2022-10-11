@@ -11,16 +11,18 @@
     grid-template-areas: 
     "caja1 caja2"
     "caja3 caja4"
-    "caja5 caja6"
-    "caja7 caja8"
-    "caja9 caja9";
+    "caja5 caja5"
+    "caja7 caja9"
+    "caja6 caja6"
+    "caja8 caja8";
     @media(min-width:500px){
         max-width: 700px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
         "caja1 caja2 caja3"
-        "caja4 caja5 caja6"
-        "caja7 caja8 caja9";
+        "caja4 caja6 caja6"
+        "caja7 caja8 caja8"
+        "caja5 caja5 caja9";
     }
     @media(min-width:992px){
         max-width: none;
@@ -31,47 +33,53 @@
         "caja1 caja2 caja3 caja4"
         "caja5 caja5 caja6 caja6"
         "caja7 caja8 caja8 caja9"
-    
-        
     }
 }
 .productos-style-1 {
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-    "termos1 termos1"
-    "termos1 termos1"
-    "termos3 termos4"
-    "termos2 termos5"
-    "termos6 termos7";
+    "caja10 caja11"
+    "caja12 caja13"
+    "caja14 caja15"
+    "caja16 caja17";
     @media(min-width:500px){
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
-        "termos1 termos2 termos3"
-        "termos1 termos4 termos5"
-        "termos6 termos7 termos7";
+        "caja10 caja11 caja12"
+        "caja13 caja14 caja15"
+        "caja16 caja17 none";
     }
     @media(min-width:992px){
-        grid-template-columns: 350px 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         align-items: stretch;
         grid-template-areas: 
-        "termos1 termos2 termos3 termos4"
-        "termos1 termos5 termos6 termos7";
+        "caja10 caja11 caja12 caja13"
+        "caja14 caja15 caja16 caja17";
     }
 }
 .caja {
     text-align: center;
     border: grey solid 1px;
-    margin: 15px;
+    margin: 10px;
     border-radius: 0.25rem;
+    #carouselExampleFade{
+        width: 100%;
+    }
+    p {
+        font-size: 75%;
+        font-weight: 600;
+        margin: 0.5rem ;
+    }
     img {
-        @include size (100%, 55vw);
-        max-height: 234px;
+        object-fit: cover;
+        width: 100%;
         box-shadow : $box-shadow ;
         border-radius: 0;
         @media(min-width:500px){
-            max-height: 265px;
+            max-height: 225px;
         }
         @media(min-width:992px){
-            max-height: 290px;
+            max-height: 280px;
         }
     }
     &:hover {
@@ -98,19 +106,19 @@
     grid-area: caja2;
 }
 .caja3 {
-    grid-area: caja3    
+    grid-area: caja3;   
 }
 .caja4 {
-    grid-area: caja4
+    grid-area: caja4;
 }
 .caja5 {
-    grid-area: caja5
+    grid-area: caja5;
 }
 .caja6 {
     grid-area: caja6;
 }
 .caja7 {
-    grid-area: caja7 
+    grid-area: caja7;
 }
 .caja8 {
     grid-area: caja8;
@@ -119,40 +127,49 @@
     grid-area: caja9;
 }
 .caja10 {
-    grid-area: termos1;
-    img{
-        max-height: 500px;
-        height: 100%;
-        @media(min-width:500px){
-            max-height: 365px;
-        }
-        @media(min-width:992px){
-            max-height: 500px;
-        }
-    }
+    grid-area: caja10;
 }
 .caja11 {
-    grid-area: termos2;
+    grid-area: caja11;
 }
 .caja12 {
-    grid-area: termos3;
+    grid-area: caja12;
 }
 .caja13 {
-    grid-area: termos4;
+    grid-area: caja13;
 }
 .caja14 {
-    grid-area: termos5;
+    grid-area: caja14;
 }
 .caja15 {
-    grid-area: termos6;
+    grid-area: caja15;
 }
 .caja16 {
-    grid-area: termos7;
+    grid-area: caja16;
+}
+.caja17 {
+    grid-area: caja17;
 }
 .titulos {
     text-align: center;
     font-size: 25px;
     margin: 45px auto;
     border: 1px solid grey;
-    width: 110px;
+    width: 170px;
+}
+.btn {
+    background-color: $color-general;
+    border: 1px grey solid;
+    color: black;
+    margin: 0.5rem;
+    font-weight: 800;
+    &:hover{
+        background-color: $color-general;
+        border-color: $color-general;
+    }
+    &:focus{
+        background-color: $color-general;
+        border-color: $color-general;
+        box-shadow: 0 0 0 0.25rem $color-general;
+    }
 }

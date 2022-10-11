@@ -46,9 +46,15 @@ h2 {
 .contenedor {
   margin: 40px 10px;
 }
+@media (min-width: 500px) {
+  .contenedor {
+    font-size: 20px;
+  }
+}
 @media (min-width: 800px) {
   .contenedor {
     margin: 40px 30px;
+    font-size: 23px;
   }
 }
 @media (min-width: 992px) {
@@ -421,7 +427,7 @@ footer {
 .tiposdemate .card {
   border-radius: 10px;
   max-width: 450px;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 .tiposdemate .card img {
   border-radius: 10px;
@@ -442,7 +448,7 @@ footer {
   .tiposdemate .card {
     max-width: none;
     width: 75%;
-    margin: 0 auto;
+    margin: 50px auto;
   }
 }
 @media (min-width: 992px) {
@@ -492,6 +498,10 @@ footer {
   box-shadow: grey 0px 5px 0px;
 }
 
+.card-text {
+  font-style: italic;
+}
+
 /* PRODUCTOS */
 .container {
   width: auto;
@@ -504,13 +514,13 @@ footer {
   justify-content: center;
   align-items: stretch;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "caja1 caja2" "caja3 caja4" "caja5 caja6" "caja7 caja8" "caja9 caja9";
+  grid-template-areas: "caja1 caja2" "caja3 caja4" "caja5 caja5" "caja7 caja9" "caja6 caja6" "caja8 caja8";
 }
 @media (min-width: 500px) {
   .productos {
     max-width: 700px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "caja1 caja2 caja3" "caja4 caja5 caja6" "caja7 caja8 caja9";
+    grid-template-areas: "caja1 caja2 caja3" "caja4 caja6 caja6" "caja7 caja8 caja8" "caja5 caja5 caja9";
   }
 }
 @media (min-width: 992px) {
@@ -524,43 +534,52 @@ footer {
 }
 
 .productos-style-1 {
-  grid-template-areas: "termos1 termos1" "termos1 termos1" "termos3 termos4" "termos2 termos5" "termos6 termos7";
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "caja10 caja11" "caja12 caja13" "caja14 caja15" "caja16 caja17";
 }
 @media (min-width: 500px) {
   .productos-style-1 {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "termos1 termos2 termos3" "termos1 termos4 termos5" "termos6 termos7 termos7";
+    grid-template-areas: "caja10 caja11 caja12" "caja13 caja14 caja15" "caja16 caja17 none";
   }
 }
 @media (min-width: 992px) {
   .productos-style-1 {
-    grid-template-columns: 350px 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: stretch;
-    grid-template-areas: "termos1 termos2 termos3 termos4" "termos1 termos5 termos6 termos7";
+    grid-template-areas: "caja10 caja11 caja12 caja13" "caja14 caja15 caja16 caja17";
   }
 }
 
 .caja {
   text-align: center;
   border: grey solid 1px;
-  margin: 15px;
+  margin: 10px;
   border-radius: 0.25rem;
 }
-.caja img {
-  height: 55vw;
+.caja #carouselExampleFade {
   width: 100%;
-  max-height: 234px;
+}
+.caja p {
+  font-size: 75%;
+  font-weight: 600;
+  margin: 0.5rem;
+}
+.caja img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
   box-shadow: grey 0px 5px 15px;
   border-radius: 0;
 }
 @media (min-width: 500px) {
   .caja img {
-    max-height: 265px;
+    max-height: 225px;
   }
 }
 @media (min-width: 992px) {
   .caja img {
-    max-height: 290px;
+    max-height: 280px;
   }
 }
 .caja:hover {
@@ -628,45 +647,35 @@ footer {
 }
 
 .caja10 {
-  grid-area: termos1;
-}
-.caja10 img {
-  max-height: 500px;
-  height: 100%;
-}
-@media (min-width: 500px) {
-  .caja10 img {
-    max-height: 365px;
-  }
-}
-@media (min-width: 992px) {
-  .caja10 img {
-    max-height: 500px;
-  }
+  grid-area: caja10;
 }
 
 .caja11 {
-  grid-area: termos2;
+  grid-area: caja11;
 }
 
 .caja12 {
-  grid-area: termos3;
+  grid-area: caja12;
 }
 
 .caja13 {
-  grid-area: termos4;
+  grid-area: caja13;
 }
 
 .caja14 {
-  grid-area: termos5;
+  grid-area: caja14;
 }
 
 .caja15 {
-  grid-area: termos6;
+  grid-area: caja15;
 }
 
 .caja16 {
-  grid-area: termos7;
+  grid-area: caja16;
+}
+
+.caja17 {
+  grid-area: caja17;
 }
 
 .titulos {
@@ -674,7 +683,24 @@ footer {
   font-size: 25px;
   margin: 45px auto;
   border: 1px solid grey;
-  width: 110px;
+  width: 170px;
+}
+
+.btn {
+  background-color: bisque;
+  border: 1px grey solid;
+  color: black;
+  margin: 0.5rem;
+  font-weight: 800;
+}
+.btn:hover {
+  background-color: bisque;
+  border-color: bisque;
+}
+.btn:focus {
+  background-color: bisque;
+  border-color: bisque;
+  box-shadow: 0 0 0 0.25rem bisque;
 }
 
 /* CONTACTO */
@@ -717,7 +743,7 @@ footer {
 }
 .tituloContacto div p {
   color: beige;
-  font-size: 15px;
+  font-size: 18px;
 }
 @media (min-width: 992px) {
   .tituloContacto {
@@ -761,6 +787,9 @@ footer {
   align-items: center;
   text-align: center;
   padding: 20px;
+}
+.redesContacto p {
+  font-size: 18px;
 }
 .redesContacto img {
   height: 60px;
@@ -808,6 +837,7 @@ footer {
   flex-direction: column;
   justify-content: none;
   align-items: center;
+  margin: 0 15px;
 }
 @media (min-width: 992px) {
   .quienesSomos p {
@@ -824,6 +854,30 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px 0;
+  }
+  .quienesSomos__segundo .historia-uno {
+    order: 1;
+  }
+  .quienesSomos__segundo .historia-dos {
+    order: 3;
+  }
+  .quienesSomos__segundo .historia-tres {
+    order: 5;
+  }
+  .quienesSomos__segundo .historia-cuatro {
+    order: 7;
+  }
+  .quienesSomos__segundo .historia-cinco {
+    order: 2;
+  }
+  .quienesSomos__segundo .historia-seis {
+    order: 4;
+  }
+  .quienesSomos__segundo .historia-siete {
+    order: 6;
+  }
+  .quienesSomos__segundo .historia-ocho {
+    order: 8;
   }
 }
 

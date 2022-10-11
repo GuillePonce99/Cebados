@@ -1,6 +1,7 @@
 .quienesSomos {
     @include display-direction-justify (flex, column, none);
     align-items: center;
+    margin: 0 15px;
     p{
         @media(min-width:992px){
             width: 410px;
@@ -14,6 +15,30 @@
         @include display-direction-justify (flex, row, space-between);
         flex-wrap: wrap;
         padding: 20px 0;
+        .historia-uno {
+            order: 1
+        }
+        .historia-dos {
+            order: 3
+        }
+        .historia-tres {
+            order: 5
+        }
+        .historia-cuatro {
+            order: 7
+        }
+        .historia-cinco {
+            order: 2
+        }
+        .historia-seis {
+            order: 4
+        }
+        .historia-siete {
+            order: 6
+        }
+        .historia-ocho {
+            order: 8
+        }
     }
 }
 .pareja {
