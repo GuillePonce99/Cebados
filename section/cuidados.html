@@ -32,10 +32,10 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-             <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+             <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Productos
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -48,77 +48,103 @@
               <a class="nav-link active" href="../section/cuidados.html">Cuidados</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../section/contacto.html">Contactos</a>
+              <a class="nav-link" aria-current="page" href="../section/contacto.html">Contactos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../section/nosotros.html">Nosotros</a>
+              <a class="nav-link" aria-current="page" href="../section/nosotros.html">Nosotros</a>
             </li> 
           </ul>
         </div>
       </div>
     </nav>
   </header>
-  <section class="contenedorCuidados">
+  <div class="fondoCuidados">
     <div>
       <h1>CUIDADOS Y MANTENIMIENTO</h1>
     </div>
     <div>
-      <p class="cuidados__texto">Aca te dejamos algunos datos sobre como curar un mate de la forma adecuada para que puedas sacarle el mayor sabor posible y unos tips de como cuidarlos y mantenerlos. </p>
+      <p>Aca te dejamos algunos datos sobre como curar un mate de la forma adecuada para que puedas sacarle el mayor sabor posible y unos tips de como cuidarlos y mantenerlos. </p>
     </div>
+  </div>
+  <section class="contenedorCuidados">
     <div class="cuidados">
       <div class="cuidados__titulo">
-        <h2>Pasos para curar nuestro mate</h2>
+        <p>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+            Pasos para curar nuestro mate
+          </button>
+        </p>
       </div>
-      <div class="cuidados__grid">
-        <div class="text-transition">
-          <img class="#" src="https://img.icons8.com/officexs/2x/mate.png" alt="icono mate de color naranja">
-          <p class="#">Para curar nuestro mate vamos a poner yerba usada y agregar agua caliente (no hervida) con cuidado de no llegar hasta la virola. Y dejamos reposar 24hs.</p>
-        </div>
-        <div class="text-transition">
-          <img class="#" src="https://img.icons8.com/officexs/2x/mate.png" alt="icono mate de color naranja">
-          <p class="#">Una vez cumplidas las 24hs reservamos la yerba usada, luego secamos nuestro mate y lo dejamos airear aproximadamente 1 hora.</p>
-        </div>
-        <div class="text-transition">
-          <img class="#" src="https://img.icons8.com/officexs/2x/mate.png" alt="icono mate de color naranja">
-          <p class="#">Este proceso lo vamos a repetir una 2 o 3 veces. Al finalizar nuestro mate ya esta curado por completo. Es normal el color negro/verdoso que el mate adquiere en el proceso.</p>
-        </div>
-      </div>
-    </div>
-    <div class="cuidados">
-      <div class="cuidados__titulo">
-        <h2>Cuidado de nuestro mate y tips</h2>
-      </div>
-      <div class="cuidados__grid">
-        <div class="text-transition">
-          <img src="https://img.icons8.com/officexs/2x/mate.png" alt="icono mate de color naranja">
-          <p>Los mates son de producción artesanal, debemos tener cuidado de no poner agua hasta la virola ya que puede traspasarla y manchar el cuero y con el tiempo estropear la virola. Así cuidamos el cuero y nuestro mate.</p>
-        </div>
-        <div class="text-transition">
-          <img src="https://img.icons8.com/officexs/2x/mate.png" alt="icono mate de color naranja">
-          <p>Es normal el color negro/verdoso que toma el calabaza. Con el tiempo y el uso se va tiñendo.</p>
-        </div>
-        <div class="text-transition">
-          <img src="https://img.icons8.com/officexs/2x/mate.png" alt="icono mate de color naranja">
-          <p>No dejar mucho tiempo la yerba en el mate. Una vez terminemos de matear tratemos de vaciarlo así evitamos que se formen hongos y nuestro mate se arruine. Aplica a cualquier mate sea calabaza o madera.</p>
+      <div class="show" id="collapseExample">
+        <div class="card card-body">
+          <div class="cuidados__grid">
+            <div class="text-transition">
+              <img class="#" src="https://img.icons8.com/officexs/2x/mate.png" alt="icono mate de color naranja">
+              <p class="#">Para curar nuestro mate vamos a poner yerba usada y agregar agua caliente (no hervida) con cuidado de no llegar hasta la virola. Y dejamos reposar 24hs.</p>
+            </div>
+            <div class="text-transition">
+              <img class="#" src="https://img.icons8.com/officexs/2x/mate.png" alt="icono mate de color naranja">
+              <p class="#">Una vez cumplidas las 24hs reservamos la yerba usada, luego secamos nuestro mate y lo dejamos airear aproximadamente 1 hora.</p>
+            </div>
+            <div class="text-transition">
+              <img class="#" src="https://img.icons8.com/officexs/2x/mate.png" alt="icono mate de color naranja">
+              <p class="#">Este proceso lo vamos a repetir una 2 o 3 veces. Al finalizar nuestro mate ya esta curado por completo. Es normal el color negro/verdoso que el mate adquiere en el proceso.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="cuidados">
       <div class="cuidados__titulo">
-        <h2>Mantenimiento del mate de calabaza</h2>
+        <p>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="true" aria-controls="collapseExample1">
+            Cuidado de nuestro mate y tips
+          </button>
+        </p>
       </div>
-      <div class="cuidados__grid">
-        <div class="text-transition">
-          <img src="https://img.icons8.com/officexs/2x/mate.png" alt="icono mate de color naranja">
-          <p>No mojar ni el interior ni el exterior del mate. Y tampoco enjuagar bajo el caño.</p>
+      <div class="show" id="collapseExample1">
+        <div class="card card-body">
+          <div class="cuidados__grid">
+            <div class="text-transition">
+              <img src="https://img.icons8.com/officexs/2x/mate.png" alt="icono mate de color naranja">
+              <p>Los mates son de producción artesanal, debemos tener cuidado de no poner agua hasta la virola ya que puede traspasarla y manchar el cuero y con el tiempo estropear la virola. Así cuidamos el cuero y nuestro mate.</p>
+            </div>
+            <div class="text-transition">
+              <img src="https://img.icons8.com/officexs/2x/mate.png" alt="icono mate de color naranja">
+              <p>Es normal el color negro/verdoso que toma el calabaza. Con el tiempo y el uso se va tiñendo.</p>
+            </div>
+            <div class="text-transition">
+              <img src="https://img.icons8.com/officexs/2x/mate.png" alt="icono mate de color naranja">
+              <p>No dejar mucho tiempo la yerba en el mate. Una vez terminemos de matear tratemos de vaciarlo así evitamos que se formen hongos y nuestro mate se arruine. Aplica a cualquier mate sea calabaza o madera.</p>
+            </div>
+          </div>
         </div>
-        <div class="text-transition">
-          <img src="https://img.icons8.com/officexs/2x/mate.png" alt="icono mate de color naranja">
-          <p>Para limpiarlo solo retiramos la yerba y secamos con servilletas y <strong>NO</strong> dejar secar boca abajo.</p>
-        </div>
-        <div class="text-transition">
-          <img src="https://img.icons8.com/officexs/2x/mate.png" alt="icono mate de color naranja">
-          <p>No se debe raspar ni refregar el interior del mate.</p>
+      </div>
+    </div>
+    <div class="cuidados">
+      <div class="cuidados__titulo">
+        <p>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="true" aria-controls="collapseExample2">
+            Mantenimiento del mate de calabaza
+          </button>
+        </p>
+      </div>
+      <div class="show" id="collapseExample2">
+        <div class="card card-body">
+          <div class="cuidados__grid">
+            <div class="text-transition">
+              <img src="https://img.icons8.com/officexs/2x/mate.png" alt="icono mate de color naranja">
+              <p>No mojar ni el interior ni el exterior del mate. Y tampoco enjuagar bajo el caño.</p>
+            </div>
+            <div class="text-transition">
+              <img src="https://img.icons8.com/officexs/2x/mate.png" alt="icono mate de color naranja">
+              <p>Para limpiarlo solo retiramos la yerba y secamos con servilletas y <strong>NO</strong> dejar secar boca abajo.</p>
+            </div>
+            <div class="text-transition">
+              <img src="https://img.icons8.com/officexs/2x/mate.png" alt="icono mate de color naranja">
+              <p>No se debe raspar ni refregar el interior del mate.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

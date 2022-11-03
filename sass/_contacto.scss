@@ -98,3 +98,31 @@
         }
     }
 }
+
+.formulario {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    .btn-primary {
+        margin: 0px auto;
+        display: block;
+        background-color: $color-general;
+        border: 1px grey solid;
+        color: black;
+        font-weight: 800;
+        &:hover {
+            color: $color-hover;
+        }
+        &:focus {
+            background-color: bisque;
+            border-color: bisque;
+            box-shadow: none
+        }
+    }
+    @media(min-width:500px){
+        width: 60%;
+    }
+    @media(min-width:992px){
+        width: 40%;
+    }
+}
